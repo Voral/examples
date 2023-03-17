@@ -1,0 +1,17 @@
+{
+    "name": "vasoft/examples",
+    "autoload": {
+        "psr-4": {
+            "Vasoft\\Examples\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Vorobyev",
+            "email": "voral.adm@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2.0"
+    }
+}
