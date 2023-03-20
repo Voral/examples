@@ -1,8 +1,11 @@
 <?php
 
-namespace Database\Oracle;
+namespace Vasoft\Examples\Factory\Database\Oracle;
 
-class QueryBuilder implements \DBQueryBuilderInterface
+
+use Vasoft\Examples\Factory\Contract\DBQueryBuilderInterface;
+
+class QueryBuilder implements DBQueryBuilderInterface
 {
 
     public function __construct(public readonly string $tableName)

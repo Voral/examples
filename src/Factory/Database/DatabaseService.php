@@ -1,8 +1,9 @@
 <?php
 
-namespace Database;
+namespace Vasoft\Examples\Factory\Database;
 
-use Database\MySql;
+use Vasoft\Examples\Factory\Contract\DataBaseInterface;
+use Vasoft\Examples\Factory\Database\MySql;
 
 class DatabaseService
 {
@@ -11,7 +12,7 @@ class DatabaseService
     public const ORACLE = 'oracle';
 
     private array $drivers = [
-        self::MYSQL => Mysql\DatabaseService::class,
+        self::MYSQL => MySql\DatabaseService::class,
         self::POSTGRE => Postgre\DatabaseService::class,
         self::ORACLE => Oracle\DatabaseService::class,
     ];
@@ -22,7 +23,7 @@ class DatabaseService
         $this->drivers[$type] = $className;
     }
 
-    public function get(string $type): \DataBaseInterface
+    public function get(string $type): DataBaseInterface
     {
         if (!array_key_exists($type, $this->db)) {
             $this->db[$type] = $this->init($type);
@@ -30,7 +31,7 @@ class DatabaseService
         return $this->db[$type];
     }
 
-    public function init(string $type): \DataBaseInterface
+    public function init(string $type): DataBaseInterface
     {
         if (!array_key_exists($type, $this->drivers)) {
             throw new \Exception('Unknown DB type ' . $type);

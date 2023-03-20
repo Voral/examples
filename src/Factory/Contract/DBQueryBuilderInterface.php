@@ -1,5 +1,5 @@
 <?php
-
+namespace Vasoft\Examples\Factory\Contract;
 interface DBQueryBuilderInterface
 {
     public function __construct(string $tableName);

@@ -1,11 +1,12 @@
 <?php
 
-namespace Database\Oracle;
+namespace Vasoft\Examples\Factory\Database\Oracle;
 
-use DBRecordInterface;
-use QueryConfigInterface;
+use Vasoft\Examples\Factory\Contract\DBConnectionInterface;
+use Vasoft\Examples\Factory\Contract\DBRecordInterface;
+use Vasoft\Examples\Factory\Contract\QueryConfigInterface;
 
-class Connection implements \DBConnectionInterface
+class Connection implements DBConnectionInterface
 {
 
     public function __construct(

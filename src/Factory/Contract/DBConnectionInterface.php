@@ -1,5 +1,5 @@
 <?php
-
+namespace Vasoft\Examples\Factory\Contract;
 interface DBConnectionInterface
 {
     public function __construct(array $property);

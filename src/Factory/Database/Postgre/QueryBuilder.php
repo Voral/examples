@@ -1,8 +1,10 @@
 <?php
 
-namespace Database\Postgre;
+namespace Vasoft\Examples\Factory\Database\Postgre;
 
-class QueryBuilder implements \DBQueryBuilderInterface
+use Vasoft\Examples\Factory\Contract\DBQueryBuilderInterface;
+
+class QueryBuilder implements DBQueryBuilderInterface
 {
 
     public function __construct(public readonly string $tableName)

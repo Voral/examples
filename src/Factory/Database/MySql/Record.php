@@ -1,8 +1,10 @@
 <?php
 
-namespace Database\MySql;
+namespace Vasoft\Examples\Factory\Database\MySql;
 
-class Record implements \DBRecordInterface
+use Vasoft\Examples\Factory\Contract\DBRecordInterface;
+
+class Record implements DBRecordInterface
 {
 
     public function __construct(private readonly int $id, private readonly array $fields)

@@ -1,11 +1,11 @@
 <?php
 
-namespace Database\Oracle;
+namespace Vasoft\Examples\Factory\Database\Oracle;
 
-use DataBaseInterface;
-use DBConnectionInterface;
-use DBQueryBuilderInterface;
-use System\Config;
+use Vasoft\Examples\Factory\Contract\DataBaseInterface;
+use Vasoft\Examples\Factory\Contract\DBConnectionInterface;
+use Vasoft\Examples\Factory\Contract\DBQueryBuilderInterface;
+use Vasoft\Examples\Factory\System\Config;
 
 class DatabaseService implements DataBaseInterface
 {

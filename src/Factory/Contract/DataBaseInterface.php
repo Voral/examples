@@ -1,6 +1,6 @@
 <?php
-
-use System\Config;
+namespace Vasoft\Examples\Factory\Contract;
+use Vasoft\Examples\Factory\System\Config;
 
 interface DataBaseInterface
 {

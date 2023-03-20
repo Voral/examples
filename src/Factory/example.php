@@ -1,6 +1,6 @@
 <?php
 
-use Database\DatabaseService;
+use Vasoft\Examples\Factory\Database\DatabaseService;
 
 include '../../vendor/autoload.php';
 

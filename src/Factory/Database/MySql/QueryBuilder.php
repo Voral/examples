@@ -1,8 +1,10 @@
 <?php
 
-namespace Database\MySql;
+namespace Vasoft\Examples\Factory\Database\MySql;
 
-class QueryBuilder implements \DBQueryBuilderInterface
+use Vasoft\Examples\Factory\Contract\DBQueryBuilderInterface;
+
+class QueryBuilder implements DBQueryBuilderInterface
 {
 
     public function __construct(public readonly string $tableName)

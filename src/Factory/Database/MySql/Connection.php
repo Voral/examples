@@ -1,11 +1,11 @@
 <?php
+namespace Vasoft\Examples\Factory\Database\MySql;
 
-namespace Database\MySql;
+use Vasoft\Examples\Factory\Contract\DBConnectionInterface;
+use Vasoft\Examples\Factory\Contract\DBRecordInterface;
+use Vasoft\Examples\Factory\Contract\QueryConfigInterface;
 
-use DBRecordInterface;
-use QueryConfigInterface;
-
-class Connection implements \DBConnectionInterface
+class Connection implements DBConnectionInterface
 {
 
     public function __construct(

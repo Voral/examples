@@ -1,6 +1,6 @@
 <?php
 
-namespace System;
+namespace Vasoft\Examples\Factory\System;
 
 class Config
 {

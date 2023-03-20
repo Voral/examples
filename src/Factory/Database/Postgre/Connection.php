@@ -1,11 +1,13 @@
 <?php
 
-namespace Database\Postgre;
+namespace Vasoft\Examples\Factory\Database\Postgre;
 
-use DBRecordInterface;
-use QueryConfigInterface;
 
-class Connection implements \DBConnectionInterface
+use Vasoft\Examples\Factory\Contract\DBConnectionInterface;
+use Vasoft\Examples\Factory\Contract\DBRecordInterface;
+use Vasoft\Examples\Factory\Contract\QueryConfigInterface;
+
+class Connection implements DBConnectionInterface
 {
 
     public function __construct(
