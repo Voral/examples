@@ -23,3 +23,7 @@
 ## Команда
 /src/Command\
 /src/Command/example.php
+
+## DirectoryIterator
+/src/Explorer\
+/src/Explorer/example.php
