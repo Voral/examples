@@ -27,3 +27,10 @@
 ## DirectoryIterator
 /src/Explorer\
 /src/Explorer/example.php
+
+## Sort, Search, простые числа
+/src/Sort\
+/src/Sort/sortExample.php сортировка массива\
+/src/Sort/searchExample.php поиск по отсортированному массиву\
+/src/Sort/cleanExample.php удаление по значению\
+/src/Sort/primeNumbers.php Простые числа\
